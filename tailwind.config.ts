@@ -17,8 +17,10 @@ export default {
         foreground: "var(--foreground)",
 
       },
+  
       fontFamily: { 
         sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+        liuJan: ['"Liu Jian Mao Cao"', 'cursive', 'serif'],
       },
       
     },

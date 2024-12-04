@@ -15,9 +15,12 @@ export default function Home() {
     <div className="bg-bgColor min-h-screen w-full">
       <Navbar />
 
-      <div className='grid justify-center relative border border-blue-300'>
+      <div className='grid justify-center relative border'>
         <MyComponent image={images[0]} />
-        <h4 className='absolute right-1 top-1/2'>innovative</h4>
+
+        <div className="writing-mode-vertical-rl rotate-90 absolute right-0 top-1/2 text-darkBrown font-liuJan">
+        <span className='text-orange1'>code.</span>create.<span className='text-orange1'>innovate</span>
+        </div>
 
         <div className='text-center mt-12'>
           <h2 className='text-xl font-semibold text-darkBrown'>JOHN XYRYL PEDROSA</h2>

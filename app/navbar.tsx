@@ -1,5 +1,13 @@
 "use client";
 import React, { useState } from 'react';
+import logo from '../public/images/bg1.svg';
+import MyComponent from './images';
+
+
+const images = [
+
+  { src: logo, alt: 'Description of image 2', width: 60, height: 60 },
+];
 
 
 export const Navbar = () => {
@@ -15,7 +23,8 @@ export const Navbar = () => {
 
         <div className="max-w-screen-2xl flex flex-wrap justify-between mx-8">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="images/bg1.svg" className="h-16 w-16" alt="Flowbite Logo" />
+       
+            <MyComponent image={images[0]} />
   
           </a>
   
