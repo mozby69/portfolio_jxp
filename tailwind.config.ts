@@ -9,10 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
+        bgColor: "#fff8e8",
+        orange1:"#d4711a",
+        bgGray:"#fdf9f0",
         background: "var(--background)",
         foreground: "var(--foreground)",
+
       },
+      fontFamily: { 
+        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+      },
+      
     },
   },
   plugins: [],
 } satisfies Config;
+
+
+
+
+
