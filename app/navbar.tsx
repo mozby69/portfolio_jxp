@@ -11,7 +11,8 @@ export const Navbar = () => {
   
   
     return (
-      <nav className="border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <nav className="relative border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+
         <div className="max-w-screen-2xl flex flex-wrap justify-between mx-8">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="images/bg1.svg" className="h-16 w-16" alt="Flowbite Logo" />
@@ -45,11 +46,15 @@ export const Navbar = () => {
             </svg>
           </button>
   
-  
-          <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} w-full`} id="navbar-hamburger">
-            <ul className="flex flex-col font-medium mt-4 rounded-lg bg-bgGray shadow-2xl">
+          <div
+            className={`${
+              isMobileMenuOpen ? 'block' : 'hidden'
+            } absolute top-full left-1/2 transform -translate-x-1/2 w-4/5 bg-bgGray shadow-2xl z-50 rounded-md`}
+            id="navbar-hamburger"
+          >
+            <ul className="flex flex-col font-medium mt-4 rounded-lg">
               <li>
-                <a href="#" className="block py-2 px-3 text-gray rounded hover:bg-orange1 dark:bg-blue-600">
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-orange1 dark:bg-blue-600">
                   Home
                 </a>
               </li>
@@ -59,7 +64,7 @@ export const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-orange1 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-orange1 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
                   Pricing
                 </a>
               </li>
@@ -70,6 +75,7 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
+
   
         </div>
       </nav>
